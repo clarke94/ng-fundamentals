@@ -1,0 +1,9 @@
+<div class="well hoverwell thumbnail">
+    <h2>{{event.name}}</h2>
+    <ul>
+        <li>Date: {{event.date}}</li>
+        <li>Time: {{event.time}}</li>
+        <li>Price: {{event.price | currency:'GBP'}}</li>
+        <li>Location: {{event.location.address}}, {{event.location.city}}, {{event.location.country}}</li>
+    </ul>
+</div>

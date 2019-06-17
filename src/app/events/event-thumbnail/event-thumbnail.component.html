@@ -2,7 +2,12 @@
     <h2>{{event.name}}</h2>
     <ul>
         <li>Date: {{event.date}}</li>
-        <li>Time: {{event.time}}</li>
+        <li [ngSwitch]="event?.time" [ngClass]="getStartTimeClass()">
+            Time: {{event.time}}
+            <span *ngSwitchCase="'8:00 am'">(Eary Start)</span>
+            <span *ngSwitchCase="'10:00 am'">(Late Start)</span>
+            <span *ngSwitchDefault>(Normal Start)</span>
+        </li>
         <li>Price: {{event.price | currency:'GBP'}}</li>
         <li>Location: {{event.location.address}}, {{event.location.city}}, {{event.location.country}}</li>
     </ul>

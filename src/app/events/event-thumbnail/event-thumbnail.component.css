@@ -1,0 +1,12 @@
+.thumbnail {
+    min-height: 250px;
+}
+
+ul li {
+    color: #bbb;
+    list-style-type: none;
+}
+
+.green {
+    color: #003300 !important;
+}

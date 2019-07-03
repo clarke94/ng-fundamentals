@@ -18,6 +18,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SessionCreateComponent } from './events/session-create/session-create.component';
 import { SessionListComponent } from './events/session-list/session-list.component';
 import { CollapseComponent } from './shared/collapse/collapse.component';
+import { DurationPipe } from './shared/duration.pipe';
 
 @NgModule({
     declarations: [
@@ -30,7 +31,8 @@ import { CollapseComponent } from './shared/collapse/collapse.component';
         ErrorsComponent,
         SessionCreateComponent,
         SessionListComponent,
-        CollapseComponent
+        CollapseComponent,
+        DurationPipe
     ],
     imports: [
         BrowserModule,

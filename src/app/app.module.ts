@@ -17,6 +17,7 @@ import { AuthService } from "./services/auth.service";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SessionCreateComponent } from './events/session-create/session-create.component';
 import { SessionListComponent } from './events/session-list/session-list.component';
+import { CollapseComponent } from './shared/collapse/collapse.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +29,8 @@ import { SessionListComponent } from './events/session-list/session-list.compone
         EventCreateComponent,
         ErrorsComponent,
         SessionCreateComponent,
-        SessionListComponent
+        SessionListComponent,
+        CollapseComponent
     ],
     imports: [
         BrowserModule,
